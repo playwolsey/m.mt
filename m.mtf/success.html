@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <title>付款成功-唯旅行和爱情不可辜负</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/super.css">
+    <script type="text/javascript" src="lib/mootools-1.4.5.js"></script>
+</head>
+<body>
+    <div class="layout-auto">
+        <div class="page-wrap">
+            <div class="mod1">
+                <ul>
+                    <li style="text-align:left;padding-left:10px;">
+                        <button><i class="fcon-arrow-l"></i>返回首页</button>
+                    </li>
+                    <li>预定成功</li>
+                    <li>&nbsp;</li>
+                </ul>
+            </div><!-- end .mod1 -->
+            <div class="mod">
+                <div class="mod-success">
+                    <p class="success-icon"></p>
+                    <div class="info">
+                        <p class="p1">预订成功</p>
+                        <br>
+                        <span class="fc5 fb">祝您旅途愉快</span>
+                    </div><!-- end .info -->
+                </div><!-- end .mod-success -->
+                <p class="p3 mp">
+                <a class="effeckt-page-transition-button">
+                    <i class="fcon-arrow-l"></i>
+                    返回路线详情
+                </a>
+                </p>
+            </div><!-- end .mod -->
+            <div class="mod-clain m320">
+                <div class="m320-in">
+                    <p class="p1">感谢您选择妙途的产品，祝您旅行中遇到您的缘分</p>
+                    <div class="txt-mod">
+                        <p class="headtxt">
+                            <i class="icon-aplan-h2"></i>
+                            客服电话
+                        </p>
+                        <p>若有疑问，请拨打妙途客服<span class="fb">4008-030-085</span>咨询</p>
+                    </div><!-- end .txt-mod -->
+                    <div class="txt-mod">
+                        <p class="headtxt">
+                            <i class="icon-aplan-h3"></i>
+                            电脑登陆
+                        </p>
+                        <p>登陆妙途官网<span class="fb">www.miaotu520.com</span>完善资料，认识更多的人</p>
+                    </div><!-- end .txt-mod -->
+                    <p class="p2">请查看短信，相关产品信息已经发送您的短信中</p>
+                </div><!-- end .m320-in -->
+            </div><!-- end .mod-chain -->
+
+            <div class="mod-phone mod">
+                <p class="p1 mp">直接拨打客服询问：</p>
+                <p class="mp">
+                    <a class="phone green-phone" href="tel:4008-030-085">
+                        <span class="img-bg"></span>4008-030-085
+                    </a>
+                </p>
+            </div><!-- end .mod-phone -->
+        </div><!-- end .page-wrap -->
+    </div><!-- end .layout-auto -->
+<script type="text/javascript">
+(function() {
+	var id = getUrlPara('id')?getUrlPara('id'):'';
+
+	$$('.mod1 button').addEvent('click', function() {
+		window.location.href = 'index.html';
+	});
+	
+	$$('a.effeckt-page-transition-button').set('href', 'super.html?id='+id);
+})();
+
+function getUrlPara(name) { 
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");  
+    var r = window.location.search.substr(1).match(reg);  
+    if (r != null) return unescape(r[2]); return null;
+}
+</script>
+</body>
+</html>
